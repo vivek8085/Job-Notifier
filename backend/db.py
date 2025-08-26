@@ -8,7 +8,7 @@ load_dotenv()
 from urllib.parse import quote_plus
 
 username = "s8994680"
-password = quote_plus("Student@2238")  # encodes special characters
+password = quote_plus("**********")  # encodes special characters
 
 MONGO_URL = f"mongodb+srv://{username}:{password}@cluster0.ojmuisw.mongodb.net/job?retryWrites=true&w=majority&appName=Cluster0"
 
@@ -25,3 +25,4 @@ async def ensure_indexes():
     # unique index on hash to avoid duplicates
     await opportunities_collection.create_index("hash", unique=True, sparse=True)
     await opportunities_collection.create_index("discovered_at")
+
