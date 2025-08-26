@@ -24,7 +24,7 @@ app.add_middleware(
 
 # ---------- MongoDB ----------
 username = quote_plus("s8994680")
-password = quote_plus("Student@2238")
+password = quote_plus("**********")
 uri = f"mongodb+srv://{username}:{password}@cluster0.ojmuisw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(uri)
 
@@ -118,3 +118,4 @@ def start_scheduler():
     loop.run_until_complete(scheduler())
 
 threading.Thread(target=start_scheduler, daemon=True).start()
+
